@@ -1,2 +1,6 @@
 # Linear-Regression
- Housing price prediction with deep learning network.
+ House price prediction with deep learning network.
+
+Dependencies
+------------
+numpy,matplotlib.pyplot
