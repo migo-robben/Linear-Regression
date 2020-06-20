@@ -132,14 +132,13 @@ class Network(object):
 
 # 获取数据
 training_data, test_data, minimums, maximums = load_data(data_file_path)
-# print(test_data[0][-1]*(maximums[-1]-minimums[-1])+minimums[-1])
 
 # 创建网络
 net = Network(13)
 
 # 启动训练
 losses = net.train(training_data,
-    num_epoches=150,
+    num_epoches=500,
     enable_mini_batch=True,
     iterations=100,
     batch_size=100,
@@ -149,7 +148,7 @@ losses = net.train(training_data,
 # losses = net.train(training_data,
 #     num_epoches=100,
 #     enable_mini_batch=True,
-#     batch_size=506,
+#     batch_size=06,
 #     eta=0.1)
 # 和下面的相同
 # losses = net.train(training_data,
